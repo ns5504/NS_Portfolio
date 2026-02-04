@@ -1,0 +1,139 @@
+/* =========================
+   Creative page overrides
+   Fix modal spacing + image layout
+   ========================= */
+
+:root{
+  /* use your existing LVMH palette variables from main.css */
+  --modal-pad: 22px;
+  --modal-gap: 18px;
+}
+
+/* Make creative section align with container and not hug the edges */
+#creative{
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 4.5rem 2rem;
+}
+
+/* ----- Modal sizing + padding fixes ----- */
+.modal{
+  padding: 24px; /* gives breathing room on sides */
+}
+
+.modal-card{
+  padding: 0;                 /* IMPORTANT: remove default padding */
+  border-radius: 0;           /* LVMH feel (sharp) */
+}
+
+/* Inner wrapper gives consistent padding everywhere */
+.modal-inner{
+  padding: var(--modal-pad);
+}
+
+/* Title area spacing */
+.modal-head{
+  padding: var(--modal-pad);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.modal-head h3{
+  margin: 0 0 6px 0;
+}
+
+.modal-head .small{
+  margin: 0;
+}
+
+/* ----- Modal image area: full-width, no awkward gaps ----- */
+.modal-media{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.modal-hero-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;                 /* remove extra spacing */
+  border: 0;                 /* clean edge-to-edge */
+}
+
+/* Optional thumbnails row */
+.modal-thumbs{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 12px var(--modal-pad) var(--modal-pad);
+  background: rgba(0,0,0,0.02);
+}
+
+.modal-thumbs img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line-2);
+}
+
+/* ----- Modal content grid spacing ----- */
+.modal-grid{
+  padding: var(--modal-pad);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--modal-gap);
+}
+
+/* Tighten lists so it looks editorial */
+.modal-card ul{
+  margin: 10px 0 0;
+}
+
+.modal-card li{
+  margin-bottom: 6px;
+}
+
+/* Close button stays aligned */
+.modal-close{
+  top: 12px;
+  right: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .modal-grid{
+    grid-template-columns: 1fr;
+  }
+  .modal{ padding: 14px; }
+  .modal-thumbs{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px){
+  .modal-thumbs{
+    grid-template-columns: 1fr;
+  }
+  .modal-thumbs img{
+    height: auto;
+  }
+}
+/* Make thumbnails feel clickable */
+.modal-thumbs img{
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.modal-thumbs img:hover{
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Optional: show which one is active */
+.modal-thumbs img.active{
+  outline: 1px solid var(--line-1);
+  outline-offset: 2px;
+}

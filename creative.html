@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawal Sarwar | Creative</title>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/creative.css" />
+</head>
+
+<body>
+  <!-- Ripple canvas background -->
+  <canvas id="ripple-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top-right Nav -->
+  <header class="topbar">
+    <nav class="nav">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About Me</a>
+      <a href="creative.html">Creative</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="intro">
+    <h1>Creative</h1>
+    <p>
+      Visual Arts • Design • Photography • Illustration<br />
+      Selected works & experiments
+    </p>
+    <a href="#creative" class="button">View Creative ↓</a>
+  </section>
+
+  <!-- Creative Projects -->
+  <section id="creative">
+    <h2>Creative Work</h2>
+
+    <div class="projects-grid">
+      <!-- Creative 1 -->
+      <div class="project-card">
+        <h3>Magazine / Editorial Redesign</h3>
+        <img src="images/mag.png" alt="Editorial design preview" />
+        <p>
+          Layout redesign exploring typography hierarchy, spacing, and a modern luxury feel.
+        </p>
+        <button class="button" type="button" data-modal="modal-editorial">Details</button>
+      </div>
+
+      <!-- Creative 2 -->
+      <div class="project-card">
+        <h3>Logo / Visual Identity</h3>
+        <img src="images/logo.png" alt="Logo preview" />
+        <p>
+          Designed a visual identity (logo) for a new college program that communicates professionalism,
+          creativity, and adaptability.
+        </p>
+        <button class="button" type="button" data-modal="modal-photo">Details</button>
+      </div>
+
+      <!-- Creative 3 -->
+      <div class="project-card">
+        <h3>Crochet / Handmade Design</h3>
+        <img src="images/creative-crochet.jpg" alt="Crochet preview" />
+        <p>
+          Pattern-led projects documenting design iterations, color choices, and process.
+        </p>
+        <button class="button" type="button" data-modal="modal-crochet">Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Backdrop -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+
+  <!-- MODAL 1: Editorial -->
+  <section class="modal" id="modal-editorial" role="dialog" aria-modal="true" aria-labelledby="modal-editorial-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+
+      <!-- Header -->
+      <div class="modal-head">
+        <h3 id="modal-editorial-title">Magazine / Editorial Redesign</h3>
+        <p class="small">Layout • Typography • Visual Hierarchy • Print Design</p>
+      </div>
+
+      <!-- Images (no awkward padding) -->
+     <div class="modal-media">
+  <!-- Main large image -->
+  <img 
+    class="modal-hero-img" 
+    id="editorialMain"
+    src="images/mag.png" 
+    alt="Editorial redesign main preview"
+  />
+
+  <!-- Clickable thumbnails -->
+  <div class="modal-thumbs">
+    <img 
+      src="images/mag.png" 
+      alt="Editorial redesign preview 1"
+      class="thumb"
+      data-large="images/mag.png"
+    />
+    <img 
+      src="images/mag2.png" 
+      alt="Editorial redesign preview 2"
+      class="thumb"
+      data-large="images/mag2.png"
+    />
+  </div>
+</div>
+
+
+      <!-- Content -->
+      <div class="modal-grid">
+        <div>
+          <h4>Goal</h4>
+          <p>
+            Create a magazine that captures the cultural significance of BTS while experimenting with editorial design.
+          </p>
+
+          <h4>Process</h4>
+          <ul>
+            <li>Grid system + margin rhythm to improve readability</li>
+            <li>Headline/section styles for consistent hierarchy</li>
+            <li>Image crops + spacing tuned for balance</li>
+            <li>Researched existing K-pop media and editorial layouts</li>
+            <li>Experimented with typography, text hierarchy, and image placement</li>
+            <li>Balanced long-form content with bold design choices (cover headlines, pull quotes)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>What I’d improve next</h4>
+          <ul>
+            <li>Expand into a website page</li>
+            <li>Explore alternative type pairings for different moods</li>
+          </ul>
+
+          <h4>Links</h4>
+          <p class="modal-links">
+            <a href="#" target="_blank" rel="noopener">View PDF</a>
+            <a href="index.html#about">Back to About</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL 2: Logo / Identity (kept your modal id so JS still works) -->
+  <section class="modal" id="modal-photo" role="dialog" aria-modal="true" aria-labelledby="modal-photo-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+
+      <div class="modal-head">
+        <h3 id="modal-photo-title">Logo / Visual Identity</h3>
+        <p class="small">Branding • Typography • Identity System</p>
+      </div>
+
+      <div class="modal-media">
+  <!-- Main large image -->
+  <img 
+    class="modal-hero-img" 
+    id="editorialMain"
+    src="images/logo.png" 
+    alt="Editorial redesign main preview"
+  />
+
+  <!-- Clickable thumbnails -->
+  <div class="modal-thumbs">
+    <img 
+      src="images/logo.png" 
+      alt="Editorial redesign preview 1"
+      class="thumb"
+      data-large="images/logo.png"
+    />
+    <img 
+      src="images/logo1.png" 
+      alt="Editorial redesign preview 2"
+      class="thumb"
+      data-large="images/logo1.png"
+    />
+  </div>
+</div>
+
+      <div class="modal-grid">
+        <div>
+          <h4>Goal</h4>
+          <p>
+            Design a visual identity for a new college program that communicates professionalism,
+            creativity, and adaptability.
+          </p>
+
+          <h4>Process</h4>
+          <ul>
+            <li>Explored multiple logo concepts and icon directions</li>
+            <li>Tested readability at different sizes (small and large use cases)</li>
+            <li>Refined typography and spacing for clean balance</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>What I’d improve next</h4>
+          <ul>
+            <li>Create a full mini brand kit (colors, type scale, social templates)</li>
+            <li>Show mockups (poster, website header, social post)</li>
+          </ul>
+
+          <h4>Links</h4>
+          <p class="modal-links">
+            <a href="#" target="_blank" rel="noopener">View Files</a>
+            <a href="index.html#projects">Back to Projects</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL 3: Crochet -->
+  <section class="modal" id="modal-crochet" role="dialog" aria-modal="true" aria-labelledby="modal-crochet-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close">×</button>
+
+      <div class="modal-head">
+        <h3 id="modal-crochet-title">Crochet / Handmade Design</h3>
+        <p class="small">Product Design • Iteration • Visual Craft</p>
+      </div>
+
+      <div class="modal-media">
+        <img class="modal-hero-img" src="images/creative-crochet.jpg" alt="Crochet preview" />
+      </div>
+
+      <div class="modal-grid">
+        <div>
+          <h4>What I make</h4>
+          <p>Wearables and small pieces focused on structure, pattern, and color.</p>
+
+          <h4>Process</h4>
+          <ul>
+            <li>Pattern planning + iterative sampling</li>
+            <li>Colorway testing for mood and contrast</li>
+            <li>Documenting steps for repeatable builds</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <p class="modal-links">
+            <a href="#" target="_blank" rel="noopener">View Collection</a>
+            <a href="index.html">Back to Home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/ripple.js"></script>
+</body>
+</html>
