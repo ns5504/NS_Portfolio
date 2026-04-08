@@ -3,496 +3,483 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nawal Sarwar | Portfolio</title>
-
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>Nawal Sarwar — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
 
-  <!-- Ripple canvas background -->
-  <canvas id="ripple-canvas" aria-hidden="true"></canvas>
-<header class="topbar">
-  <nav class="nav">
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#about">About Me</a>
-   <!-- <a href="creative.html">Creative</a>-->
-  </nav>
-</header>
+<!-- NAV -->
+<nav class="nav">
+  <span class="nav-brand">Nawal Sarwar</span>
+  <ul class="nav-links">
+    <li><a href="#projects-sec">Projects</a></li>
+    <li><a href="#resume-sec">Resume</a></li>
+    <li><a href="#about-sec">About</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://linkedin.com/in/nawal-sarwar/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn</a>
+    <a href="#resume-sec" class="btn-primary">Resume ↓</a>
+  </div>
+</nav>
 
-
-  <!-- Intro / Hero -->
-  <section id="intro">
-    <h1>Nawal Sarwar</h1>
-    <p>
-      Data & Business Analytics • Product Insight • AI & Design
-    </p>
-    <a href="#projects" class="button">View Projects ↓</a>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-        <!-- Project 4-1 (NEW) -->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504" target="_blank" rel="noopener">
-            Luxury Fashion Retail Performance Dashboard
-          </a>
-        </h3>
-        <img src="images/retail.png" alt="NYC restaurant inspection preview" />
-        <p>
-          Analyze sales performance, pricing discipline, seasonality, and return behavior across categories
-          and brands to support data-driven merchandising, planning, and operational decision-making in a
-          luxury retail environment.
-        </p>
-        <button class="button" type="button" data-modal="modal-nyc">Details</button>
-      </div>
-      <!-- Project 1 -2-->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504" target="_blank" rel="noopener">
-            US Alternative Fuel & EV Adoption Dashboard
-          </a>
-        </h3>
-        <img src="images/ev.jpg" alt="EV Adoption dashboard preview" />
-        <p>
-          Makes regional disparities in EV adoption visible, helping prioritize
-          charging infrastructure investment where support is limited.
-        </p>
-        <button class="button" type="button" data-modal="modal-migration">Details</button>
-      </div>
-
-      <!-- Project 2-3 -->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504/Analyzing-and-Visualizing-the-Migration-of-Scientific-Data-at-NSLS-II"
-             target="_blank" rel="noopener">
-            Scientific Data Migration Validation at NSLS-II
-          </a>
-        </h3>
-        <img src="images/bnl.jpg" alt="NSLS-II migration project preview" />
-        <p>
-          Validated the migration of <strong>10+ petabytes</strong> of scientific data
-          from MongoDB (NoSQL) to PostgreSQL (SQL).
-        </p>
-        <button class="button" type="button" data-modal="modal-luxury">Details</button>
-      </div>
-
-      <!-- Project 3-4 -->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504/Assessing-the-Impact-of-ChatGPT"
-             target="_blank" rel="noopener">
-            Assessing the Impact of ChatGPT in Education (NLP)
-          </a>
-        </h3>
-        <img src="images/nlp.jpg" alt="NLP project preview" />
-        <p>
-          Analyzed 2,086 Reddit posts using sentiment analysis + topic modeling to
-          understand perceptions of ChatGPT in education.
-        </p>
-        <button class="button" type="button" data-modal="modal-nlp">Details</button>
-      </div>
-
-      
-
-      <!-- Project 5 (NEW) -->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504" target="_blank" rel="noopener">
-            Luxury Retail Sales & Returns Analysis
-          </a>
-        </h3>
-        <img src="images/retail.jpg" alt="Luxury retail analysis preview" />
-        <p>
-          Modeled sales, markdowns, and returns to find drivers of profitability and
-          operational risk across brands and seasons.
-        </p>
-        <button class="button" type="button" data-modal="modal-retail">Details</button>
-      </div>
-
-      <!-- Project 6 (NEW) -->
-      <div class="project-card">
-        <h3>
-          <a href="https://github.com/ns5504" target="_blank" rel="noopener">
-            Customer Behavior & Retention Dashboard
-          </a>
-        </h3>
-        <img src="images/retention.jpg" alt="Customer retention dashboard preview" />
-        <p>
-          Built a dashboard tracking repeat rate, cohorts, and engagement trends to
-          support retention strategy and lifecycle marketing decisions.
-        </p>
-        <button class="button" type="button" data-modal="modal-retention">Details</button>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="label">Data &amp; Business Analytics · New York</p>
+    <h1 class="hero-h1">Turning data into<br><em>decisions</em> that matter</h1>
+    <p class="hero-sub">Analyst with hands-on experience at Brookhaven National Laboratory - bridging technical rigor with visual clarity to support strategy and operations.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="smoothTo('projects-sec')">View Projects</button>
+      <a href="https://linkedin.com/in/nawal-sarwar/" target="_blank" rel="noopener" class="btn-ghost">LinkedIn →</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-frame">
+      <div class="avatar">NS</div>
+      <p class="avatar-name">Nawal Sarwar</p>
+      <p class="avatar-role">Data Analyst · New York</p>
+      <div class="hero-badges">
+        <span class="badge">Python</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Tableau</span>
+        <span class="badge">NLP</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">BERT / RoBERTa</span>
       </div>
     </div>
-  </section>
-
-  <!-- About -->
-  <!-- About -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    <p style="text-align: center;">
-  I am a data-driven analyst with a strong foundation in Computer Science and Visual Arts. I work at the intersection of technology, business, and design, transforming complex data into clear, actionable insights that inform strategy and decision-making. Through hands-on experience in analytics, research, and visualization, I have developed skills in data cleaning, analysis, and dashboarding, with a focus on connecting quantitative findings to real-world impact.
-</p>
-
-<p style="text-align: center;">
-  I enjoy bridging technical rigor with creative thinking, ensuring that insights are both precise and meaningful. I am particularly interested in applying my skills in data, product, and retail environments, where I can support evidence-based decisions related to performance, customer experience, and operations. My goal is to contribute to teams that value both analytical depth and thoughtful design, using data to drive better outcomes while maintaining a strong sense of purpose and clarity.
-</p>
-<p>  </p>
-
-    <p class="small" style="text-align: center;">
-  Tools & Skills: Python • SQL • Excel • Tableau • Data Cleaning • Data Quality • Reporting • Analytics
-</p>
-
-
-    <!-- Email at the bottom -->
-    <hr style="margin: 20px 0; opacity: 0.2;" />
-
-    <p style="text-align: center; font-size: 0.95rem;">
-      Contact:
-      <a 
-        href="mailto:nawalsarwar77@gmail.com"
-        style="color: #071432; text-decoration: underline;"
-      >
-        nawalsarwar77@gmail.com
-      </a>
-    </p>
   </div>
 </section>
 
+<hr class="divider" />
 
-  <!-- Contact 
-  <section id="contact">
-    <h2>Contact</h2>
+<!-- PROJECTS -->
+<section class="section" id="projects-sec">
+  <p class="label">Selected work</p>
+  <h2 class="section-h2">Projects</h2>
+  <div class="projects-grid">
 
-    <form class="contact-form" id="contactForm">
-      <label>
-        Name
-        <input type="text" name="name" placeholder="Your name" required />
-      </label>
+    <div class="project-card" role="button" tabindex="0" data-modal="m-luxury">
+      <span class="proj-arrow">↗</span>
+      <p class="proj-num">01</p>
+      <h3 class="proj-title">Luxury Fashion Retail Performance Dashboard</h3>
+      <p class="proj-desc">Analyzed sales, pricing discipline, seasonality, and return behavior across categories and brands.</p>
+      <div class="proj-tags"><span class="tag">Excel</span><span class="tag">Tableau</span><span class="tag">Retail Analytics</span></div>
+      <span class="btn-details">View Details</span>
+    </div>
 
-      <label>
-        Email
-        <input type="email" name="email" placeholder="you@email.com" required />
-      </label>
+    <div class="project-card" role="button" tabindex="0" data-modal="m-ev">
+      <span class="proj-arrow">↗</span>
+      <p class="proj-num">02</p>
+      <h3 class="proj-title">US Alternative Fuel &amp; EV Adoption Dashboard</h3>
+      <p class="proj-desc">Made regional EV adoption disparities visible to prioritize charging infrastructure investment.</p>
+      <div class="proj-tags"><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">Policy Analytics</span></div>
+      <span class="btn-details">View Details</span>
+    </div>
 
-      <label>
-        Message
-        <textarea name="message" rows="5" placeholder="What would you like to talk about?" required></textarea>
-      </label>
+    <div class="project-card" role="button" tabindex="0" data-modal="m-bnl">
+      <span class="proj-arrow">↗</span>
+      <p class="proj-num">03</p>
+      <h3 class="proj-title">Scientific Data Migration Validation - NSLS-II</h3>
+      <p class="proj-desc">Validated migration of 10+ petabytes from MongoDB to PostgreSQL at Brookhaven National Laboratory.</p>
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Data Validation</span></div>
+      <span class="btn-details">View Details</span>
+    </div>
 
-      <button class="button" type="submit">Send</button>
-      <p class="small note">
-        This demo form won’t send emails yet. I’ll show you 2 easy ways to make it send (Formspree or Netlify Forms).
-      </p>
-    </form>
-  </section>-->
+    <div class="project-card" role="button" tabindex="0" data-modal="m-nlp">
+      <span class="proj-arrow">↗</span>
+      <p class="proj-num">04</p>
+      <h3 class="proj-title">Assessing the Impact of ChatGPT in Education</h3>
+      <p class="proj-desc">Analyzed 2,086 Reddit posts using BERT, RoBERTa, and LDA to surface sentiment on AI in education.</p>
+      <div class="proj-tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">BERT / RoBERTa</span></div>
+      <span class="btn-details">View Details</span>
+    </div>
 
-  <!-- Modal Backdrop -->
-  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+  </div>
+</section>
 
-  <!-- MODAL 1: EV -->
-  <section class="modal" id="modal-migration" role="dialog" aria-modal="true" aria-labelledby="modal-migration-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
+<hr class="divider" />
 
-      <h3 id="modal-migration-title">US Alternative Fuel & EV Adoption Dashboard</h3>
-      <p class="small">Excel • SQL • Tableau • Data Visualization • Policy Analytics</p>
+<!-- RESUME -->
+<section class="section" id="resume-sec">
+  <p class="label">Credentials</p>
+  <h2 class="section-h2">Resume</h2>
+  <div class="resume-wrap">
+    <div class="resume-header">
+      <div>
+        <h3 class="resume-name">Nawal Sarwar</h3>
+        <p class="resume-contact">New York &nbsp;·&nbsp;
+          <a href="mailto:nawalsarwar77@gmail.com">nawalsarwar77@gmail.com</a> &nbsp;·&nbsp;
+          <a href="https://linkedin.com/in/nawal-sarwar/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
+          <a href="https://ns5504.github.io/NS_Portfolio/" target="_blank" rel="noopener">Portfolio</a>
+        </p>
+      </div>
+    </div>
 
-      <div class="modal-grid">
-        <div>
-          <h4>Problem</h4>
-          <p>
-            Support transportation planning by understanding how EVs and alternative fuels are adopted
-            across U.S. states, and identify where charging infrastructure investment should be prioritized.
-          </p>
+    <div class="resume-body">
+      <div class="resume-col">
 
-          <h4>My approach</h4>
-          <ul>
-            <li>Cleaned and standardized state-level registration data across fuel types.</li>
-            <li>Calculated EV adoption rate (% of total vehicles) for fair comparisons.</li>
-            <li>Ranked top and bottom states by adoption and examined regional patterns.</li>
-            <li>Built an interactive Tableau dashboard for non-technical stakeholders.</li>
-          </ul>
+        <div class="resume-section">
+          <p class="resume-sec-label">Education</p>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <span class="resume-org">SUNY Old Westbury</span>
+              <span class="resume-date">Old Westbury, NY</span>
+            </div>
+            <p class="resume-role">B.S. Computer and Information Science &nbsp;·&nbsp; GPA 3.9</p>
+            <p class="resume-detail">Minor: Visual Arts</p>
+          </div>
         </div>
 
-        <div>
-          <h4>Key findings</h4>
-          <ul>
-            <li>EV adoption is concentrated in a small set of coastal/urban states.</li>
-            <li>California leads by both volume and adoption rate.</li>
-            <li>E85 is the only alternative fuel with broad national presence.</li>
-            <li>Hydrogen vehicles remain niche and concentrated in California.</li>
-            <li>Several states lag, indicating infrastructure/policy gaps.</li>
-          </ul>
+        <div class="resume-section">
+          <p class="resume-sec-label">Experience</p>
 
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://public.tableau.com/shared/X8XS7WR9Z?:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">
-              Tableau Dashboard
-            </a>
-            <a href="#contact">Contact me</a>
-          </p>
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <span class="resume-org">Brookhaven National Laboratory</span>
+              <span class="resume-date">Jun – Aug 2025</span>
+            </div>
+            <p class="resume-role">Analyst Intern &nbsp;·&nbsp; Upton, NY</p>
+            <ul class="resume-list">
+              <li>Cleaned, transformed, and validated 10PB+ of operational datasets using SQL, Python, and Excel.</li>
+              <li>Developed recurring performance dashboards monitoring key metrics and delivering scheduled reports.</li>
+              <li>Documented data sources, analytical assumptions, and methodologies consistently across projects.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <span class="resume-org">SUNY Old Westbury</span>
+              <span class="resume-date">Dec 2023 – Jun 2025</span>
+            </div>
+            <p class="resume-role">Research Assistant</p>
+            <ul class="resume-list">
+              <li>Performed data analysis across multiple concurrent professor-led research projects.</li>
+              <li>Developed NLP-based predictive models improving insight accuracy by 30% through iterative validation.</li>
+              <li>Produced visualizations and presentations for both technical and non-technical audiences.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <span class="resume-org">SUNY Old Westbury</span>
+              <span class="resume-date">Nov 2023 – Jun 2025</span>
+            </div>
+            <p class="resume-role">IT Support Consultant</p>
+            <ul class="resume-list">
+              <li>Implemented process improvements reducing bottlenecks in reporting workflows.</li>
+              <li>Maintained structured documentation libraries ensuring repeatable, scalable workflows.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-head">
+              <span class="resume-org">SkyIT</span>
+              <span class="resume-date">Jun – Sep 2024</span>
+            </div>
+            <p class="resume-role">UI/UX Graphic Designer &nbsp;·&nbsp; Calgary, AB</p>
+            <ul class="resume-list">
+              <li>Designed standardized templates and process documentation improving operational clarity across client deliverables.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /col 1 -->
+
+      <div class="resume-col">
+
+        <div class="resume-section">
+          <p class="resume-sec-label">Projects</p>
+          <div class="resume-entry">
+            <p class="resume-role">Data Migration Quality Checker</p>
+            <ul class="resume-list">
+              <li>Validated large datasets using Python and SQL, detecting schema mismatches, missing records, and integrity issues.</li>
+              <li>Automated recurring data quality checks and documented methodologies for transparency and reproducibility.</li>
+            </ul>
+          </div>
+          <div class="resume-entry">
+            <p class="resume-role">Sentiment Classifier (NLP Insight Model)</p>
+            <ul class="resume-list">
+              <li>Applied BERT, RoBERTa, and GPT to large volumes of structured and unstructured data across the full pipeline.</li>
+              <li>Synthesized outputs into clear visualizations for technical and non-technical stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <p class="resume-sec-label">Technical Skills</p>
+          <div class="skills-group">
+            <p class="skills-group-label">Languages &amp; Analytics</p>
+            <div class="skills-chips">
+              <span class="skill-chip">Python</span><span class="skill-chip">SQL</span><span class="skill-chip">Jupyter</span><span class="skill-chip">Pandas / NumPy</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Dashboards &amp; Reporting</p>
+            <div class="skills-chips">
+              <span class="skill-chip">Tableau</span><span class="skill-chip">Power BI</span><span class="skill-chip">Advanced Excel</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">AI / ML</p>
+            <div class="skills-chips">
+              <span class="skill-chip">BERT</span><span class="skill-chip">RoBERTa</span><span class="skill-chip">GPT</span><span class="skill-chip">LDA</span><span class="skill-chip">BERTopic</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Design &amp; Databases</p>
+            <div class="skills-chips">
+              <span class="skill-chip">Figma</span><span class="skill-chip">MongoDB</span><span class="skill-chip">PostgreSQL</span><span class="skill-chip">Git</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /col 2 -->
+    </div><!-- /resume-body -->
+  </div><!-- /resume-wrap -->
+</section>
+
+<hr class="divider" />
+
+<!-- ABOUT -->
+<section class="section" id="about-sec">
+  <p class="label">Background</p>
+  <h2 class="section-h2">About</h2>
+  <div class="about-grid">
+    <div class="about-body">
+      <p>I'm a data analyst based in New York with a B.S. in Computer and Information Science from <strong>SUNY Old Westbury</strong> (GPA 3.9) and a Minor in Visual Arts. My work sits at the intersection of technical analysis and clear communication - turning complex datasets into decisions that move things forward.</p>
+      <p>At <strong>Brookhaven National Laboratory</strong>, I validated the migration of over 10 petabytes of scientific data and built Python and SQL workflows to confirm data integrity at scale. I've also led NLP research on educational technology perceptions, built retail analytics dashboards, and done UI/UX design work at SkyIT.</p>
+      <p>I'm drawn to roles in finance, consulting, and retail where both analytical depth and design thinking matter - work that is precise, purposeful, and well presented.</p>
+      <div style="margin-top:32px;">
+        <a href="mailto:nawalsarwar77@gmail.com" class="btn-ghost">Get in touch →</a>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="contact-block">
+        <p class="label" style="margin-bottom:16px;">Contact</p>
+        <div class="contact-row">
+          <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <a href="mailto:nawalsarwar77@gmail.com" class="contact-link">nawalsarwar</a>
+        </div>
+        <div class="contact-row">
+          <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://linkedin.com/in/nawal-sarwar/" target="_blank" rel="noopener" class="contact-link">nawal-sarwar</a>
+        </div>
+        <div class="contact-row">
+          <svg class="c-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <a href="https://github.com/ns5504" target="_blank" rel="noopener" class="contact-link">github.com</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- MODAL 2: NSLS-II Migration (ID kept as modal-luxury) -->
-  <section class="modal" id="modal-luxury" role="dialog" aria-modal="true" aria-labelledby="modal-luxury-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
+<footer class="footer">
+  <span class="footer-copy">© 2026 Nawal Sarwar</span>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/nawal-sarwar/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/ns5504" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:nawalsarwar77@gmail.com">Email</a>
+  </div>
+</footer>
 
-      <h3 id="modal-luxury-title">Analyzing & Validating the Migration of Scientific Data at NSLS-II</h3>
-      <p class="small">Python • SQL • NoSQL → SQL Migration • Data Validation • Logging • Visualization</p>
+<!-- ========== MODALS ========== -->
+<div class="modal-backdrop" id="modalBackdrop"></div>
 
-      <div class="modal-grid">
-        <div>
-          <h4>Overview</h4>
-          <p>
-            At Brookhaven National Laboratory’s National Synchrotron Light Source II (NSLS-II), I validated
-            the migration of <strong>10+ petabytes</strong> of scientific data from MongoDB (NoSQL) to PostgreSQL (SQL)
-            within the Tiled data management framework.
-          </p>
-
-          <h4>My role</h4>
-          <ul>
-            <li>Validated correctness of large-scale NoSQL → SQL migration.</li>
-            <li>Compared query outputs across legacy and new systems.</li>
-            <li>Monitored run counts, metadata consistency, and migration logs.</li>
-            <li>Built visual summaries to communicate migration health.</li>
-          </ul>
-
-          <h4>Methods</h4>
-          <ul>
-            <li>Compared daily run counts (2021–2025) across systems.</li>
-            <li>Verified run-type distributions (FlyPlan 1D, FlyPlan 2D, others).</li>
-            <li>Parsed logs and categorized warnings vs errors.</li>
-            <li>Visualized trends using Matplotlib.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Key findings</h4>
-          <ul>
-            <li>Run-type distributions matched within <strong>&lt;0.5%</strong>.</li>
-            <li><strong>64.5%</strong> of runs completed with no issues.</li>
-            <li><strong>~35%</strong> completed with warnings but no data loss.</li>
-            <li>Only <strong>0.1%</strong> failed, indicating strong reliability.</li>
-          </ul>
-
-          <h4>Why this matters</h4>
-          <p>
-            Confirmed the SQL-backed system preserves data integrity at scale, supporting faster access,
-            improved reliability, and a future facility-wide rollout across NSLS-II beamlines.
-          </p>
-
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://github.com/ns5504/Analyzing-and-Visualizing-the-Migration-of-Scientific-Data-at-NSLS-II" target="_blank" rel="noopener">
-              GitHub Repo
-            </a>
-            <a href="#contact">Contact me</a>
-          </p>
+<!-- Modal: Luxury Fashion -->
+<div class="modal" id="m-luxury" role="dialog" aria-modal="true" aria-labelledby="m-luxury-title" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close" onclick="closeModal()">×</button>
+    <p class="label">01 · Excel · Tableau · Retail Analytics</p>
+    <h3 id="m-luxury-title" class="modal-title">Luxury Fashion Retail Performance Dashboard</h3>
+    <div class="modal-grid">
+      <div>
+        <h4>Goal</h4>
+        <p>Analyze sales performance, pricing discipline, seasonality, and return behavior across categories and brands to support data-driven merchandising and planning in a luxury retail environment.</p>
+        <h4>What I Did</h4>
+        <ul>
+          <li>Conducted rigorous data cleaning and validation in Excel, standardizing season, category, and return status fields.</li>
+          <li>Developed helper metrics (markdown amount, return flags, season order) and built pivot-based analyses.</li>
+          <li>Evaluated category, brand, and season-level performance to identify commercial priorities.</li>
+          <li>Analyzed return rates and drivers to highlight risks to customer experience and operations.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Key Insights</h4>
+        <ul>
+          <li><strong>Outerwear</strong> was the highest-revenue category, supporting prioritization in assortment planning.</li>
+          <li><strong>Shoes, Dresses, and Bottoms</strong> showed the highest markdown intensity; Outerwear maintained strongest pricing discipline.</li>
+          <li><strong>Summer generated peak sales</strong> - Zara led overall, Mango strongest in Fall, H&amp;M in Summer.</li>
+          <li>"Changed Mind" and "Size Issue" were dominant return reasons - improved presentation could reduce costs.</li>
+        </ul>
+        <h4>Links</h4>
+        <div class="modal-links">
+          <a href="https://public.tableau.com/app/profile/nawal.sarwar/viz/LuxuryFashionRetailPerformanceDashboards/Dashboard2?publish=yes" target="_blank" rel="noopener">Tableau Dashboard ↗</a>
+          <a href="https://1drv.ms/x/c/84d703db02423f41/IQBzCe7v5vrUSrhSkE0fxdW9AeXuiN_slKD-ztrSbKMfPt4" target="_blank" rel="noopener">Excel Workbook ↗</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- MODAL 3: NLP -->
-  <section class="modal" id="modal-nlp" role="dialog" aria-modal="true" aria-labelledby="modal-nlp-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
-
-      <h3 id="modal-nlp-title">Assessing the Impact of ChatGPT in Education (NLP)</h3>
-      <p class="small">Python • Reddit Data • Sentiment Analysis • Topic Modeling • Model Evaluation</p>
-
-      <div class="modal-grid">
-        <div>
-          <h4>Overview</h4>
-          <p>
-            Analyzed <strong>2,086 Reddit posts</strong> from education-focused subreddits (Dec 2022–Aug 2024)
-            to understand perceptions of ChatGPT’s impact on learning, teaching, and academic integrity.
-          </p>
-
-          <h4>Methods</h4>
-          <ul>
-            <li>Collected posts via PullPush API (keyword “ChatGPT”) across multiple subreddits.</li>
-            <li>Cleaned spam/duplicates, filtered to English, removed incomplete entries.</li>
-            <li>Created a validation set of <strong>200 labeled posts</strong> with refined guidelines.</li>
-            <li>Sentiment: VADER, BERT, RoBERTa, Logistic Regression + GPT comparisons.</li>
-            <li>Topics: LDA, CorEx, BERTopic.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Key findings</h4>
-          <ul>
-            <li>Strong concern around <strong>plagiarism</strong> and <strong>cheating</strong>.</li>
-            <li>Fear of reduced <strong>critical thinking</strong> due to over-reliance on AI.</li>
-            <li>Educators reported difficulty assessing authentic learning.</li>
-            <li>Topics surfaced ethics, unequal access, and policy uncertainty.</li>
-          </ul>
-
-          <h4>Model insights</h4>
-          <ul>
-            <li>Outputs varied by model (manual labels skewed more negative than GPT).</li>
-            <li>GPT-3.5/GPT-4 with reasoning handled nuanced cases more consistently.</li>
-          </ul>
-
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://github.com/ns5504/Assessing-the-Impact-of-ChatGPT" target="_blank" rel="noopener">
-              GitHub Repo
-            </a>
-            <a href="#contact">Contact me</a>
-          </p>
+<!-- Modal: EV -->
+<div class="modal" id="m-ev" role="dialog" aria-modal="true" aria-labelledby="m-ev-title" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close" onclick="closeModal()">×</button>
+    <p class="label">02 · SQL · Tableau · Policy Analytics</p>
+    <h3 id="m-ev-title" class="modal-title">US Alternative Fuel &amp; EV Adoption Dashboard</h3>
+    <div class="modal-grid">
+      <div>
+        <h4>Problem</h4>
+        <p>Support transportation planning by understanding how EVs and alternative fuels are adopted across U.S. states, and identify where charging infrastructure investment should be prioritized.</p>
+        <h4>My Approach</h4>
+        <ul>
+          <li>Cleaned and standardized state-level registration data across fuel types.</li>
+          <li>Calculated EV adoption rate (% of total vehicles) for fair cross-state comparisons.</li>
+          <li>Ranked top and bottom states by adoption and examined regional patterns.</li>
+          <li>Built an interactive Tableau dashboard for non-technical stakeholders.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Key Findings</h4>
+        <ul>
+          <li>EV adoption is concentrated in a small set of coastal and urban states.</li>
+          <li>California leads by both volume and adoption rate.</li>
+          <li>E85 is the only alternative fuel with broad national presence.</li>
+          <li>Hydrogen vehicles remain niche and concentrated in California.</li>
+          <li>Several states lag significantly, indicating infrastructure and policy gaps.</li>
+        </ul>
+        <h4>Links</h4>
+        <div class="modal-links">
+          <a href="https://public.tableau.com/shared/X8XS7WR9Z?:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Tableau Dashboard ↗</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- MODAL 4: NYC Inspections (NEW) -->
-  <section class="modal" id="modal-nyc" role="dialog" aria-modal="true" aria-labelledby="modal-nyc-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
-
-      <h3 id="modal-nyc-title">Luxury Fashion Retail Performance Dashboard</h3>
-      <p class="small">Excel • Tableau • Data Cleaning • Luxury Retail Analytics • Dashboarding</p></p>
-
-      <div class="modal-grid">
-        <div>
-          <h4>Goal</h4>
-          <p>
-          Analyze sales performance, pricing discipline, seasonality, and return behavior across categories
-          and brands to support data-driven merchandising, planning, and operational decision-making in a
-          luxury retail environment.
-          </p>
-
-          <h4>What I did</h4>
-          <ul>
-          <li>Conducted rigorous data cleaning and validation in Excel, standardizing key fields including season, category, and return status.</li>
-          <li>Developed structured helper metrics (markdown amount, return flags, season order) and built pivot-based analyses.</li>
-          <li>Evaluated category-, brand-, and season-level performance to identify commercial priorities.</li>
-          <li>Assessed markdown behavior to understand pricing strategy and margin implications.</li>
-          <li>Analyzed return rates and return drivers to highlight potential risks to customer experience and operational efficiency.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Key insights</h4>
-          <ul>
-            <li><strong>Outerwear emerged as the highest-revenue category</strong>, supporting its prioritization in assortment and allocation strategies.</li>
-          <li><strong>Shoes, Dresses, and Bottoms showed the highest markdown intensity</strong>, while Outerwear maintained the strongest pricing discipline.</li>
-          <li><strong>Summer generated peak sales</strong>, with Zara leading overall and across Winter and Spring, Mango strongest in Fall, and H&M in Summer.</li>
-          <li><strong>Bottoms and Outerwear recorded the highest return rates</strong>, signaling areas for improved fit consistency and expectation management.</li>
-          <li><strong>“Changed Mind” and “Size Issue” were the dominant return reasons</strong>, suggesting that enhanced product presentation and sizing clarity could reduce returns and operational costs.</li>
-          </ul>
-
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://public.tableau.com/app/profile/nawal.sarwar/viz/LuxuryFashionRetailPerformanceDashboards/Dashboard2?publish=yes" target="_blank" rel="noopener">Tableau Dashboard</a>
-            <a herf="https://1drv.ms/x/c/84d703db02423f41/IQBzCe7v5vrUSrhSkE0fxdW9AeXuiN_slKD-ztrSbKMfPt4?e=6YWQRF"target="_blank" rel="noopener">Excel Workbook</a>
-            <a href="assets\pdf\Retail Case Study.pdf" target="_blank" rel="noopener"> Case Study (PDF)
-</a>
-
-            
-          </p>
+<!-- Modal: BNL -->
+<div class="modal" id="m-bnl" role="dialog" aria-modal="true" aria-labelledby="m-bnl-title" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close" onclick="closeModal()">×</button>
+    <p class="label">03 · Python · SQL · Data Validation</p>
+    <h3 id="m-bnl-title" class="modal-title">Scientific Data Migration Validation at NSLS-II</h3>
+    <div class="modal-grid">
+      <div>
+        <h4>Overview</h4>
+        <p>At Brookhaven National Laboratory's National Synchrotron Light Source II, I validated the migration of <strong>10+ petabytes</strong> of scientific data from MongoDB (NoSQL) to PostgreSQL (SQL) within the Tiled data management framework.</p>
+        <h4>My Role</h4>
+        <ul>
+          <li>Validated correctness of the large-scale NoSQL → SQL migration.</li>
+          <li>Compared query outputs across legacy and new systems.</li>
+          <li>Monitored run counts, metadata consistency, and migration logs.</li>
+          <li>Built visual summaries to communicate migration health.</li>
+        </ul>
+        <h4>Methods</h4>
+        <ul>
+          <li>Compared daily run counts (2021–2025) across both systems.</li>
+          <li>Verified run-type distributions (FlyPlan 1D, FlyPlan 2D, others).</li>
+          <li>Parsed logs and categorized warnings vs. errors using Matplotlib.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Key Findings</h4>
+        <ul>
+          <li>Run-type distributions matched within <strong>&lt;0.5%</strong>.</li>
+          <li><strong>64.5%</strong> of runs completed with no issues.</li>
+          <li><strong>~35%</strong> completed with warnings but no data loss.</li>
+          <li>Only <strong>0.1%</strong> failed — strong system reliability confirmed.</li>
+        </ul>
+        <h4>Why It Matters</h4>
+        <p>Confirmed the SQL-backed system preserves data integrity at scale, supporting faster access and a planned facility-wide rollout across NSLS-II beamlines.</p>
+        <h4>Links</h4>
+        <div class="modal-links">
+          <a href="https://github.com/ns5504/Analyzing-and-Visualizing-the-Migration-of-Scientific-Data-at-NSLS-II" target="_blank" rel="noopener">GitHub Repo ↗</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- MODAL 5: Retail Sales & Returns (NEW) -->
-  <section class="modal" id="modal-retail" role="dialog" aria-modal="true" aria-labelledby="modal-retail-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
-
-      <h3 id="modal-retail-title">Luxury Retail Sales & Returns Analysis</h3>
-      <p class="small">Excel • SQL • KPI Design • Profitability • Returns & Markdown Analysis</p>
-        <p> Comming Soon </p>
-
-    <!----  <div class="modal-grid">
-        <div>
-          <h4>Goal</h4>
-          <p>
-            Understand what drives profitability by analyzing sales, returns, and markdown behavior across
-            brands and seasons.
-          </p>
-
-          <h4>What I built</h4>
-          <ul>
-            <li>KPI view: Total sales, AOV, markdown rate, return rate, average rating.</li>
-            <li>Breakdowns by season, brand, and product attributes.</li>
-            <li>Identified return drivers and where markdowns hurt margin.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Key insights</h4>
-          <ul>
-            <li>Return reasons clustered around “changed mind/fit” (operational + product opportunity).</li>
-            <li>Seasonality impacts both sales and returns—useful for allocation planning.</li>
-            <li>Markdown intensity correlates with margin pressure (promotion strategy opportunity).</li>
-          </ul>
-
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://github.com/ns5504" target="_blank" rel="noopener">GitHub Repo</a>
-            <a href="#contact">Contact me</a>-->
-          </p>
+<!-- Modal: NLP -->
+<div class="modal" id="m-nlp" role="dialog" aria-modal="true" aria-labelledby="m-nlp-title" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close" onclick="closeModal()">×</button>
+    <p class="label">04 · Python · NLP · BERT / RoBERTa</p>
+    <h3 id="m-nlp-title" class="modal-title">Assessing the Impact of ChatGPT in Education</h3>
+    <div class="modal-grid">
+      <div>
+        <h4>Overview</h4>
+        <p>Analyzed <strong>2,086 Reddit posts</strong> from education-focused subreddits (Dec 2022 – Aug 2024) to understand perceptions of ChatGPT's impact on learning, teaching, and academic integrity.</p>
+        <h4>Methods</h4>
+        <ul>
+          <li>Collected posts via PullPush API (keyword "ChatGPT") across multiple subreddits.</li>
+          <li>Cleaned spam/duplicates, filtered to English, removed incomplete entries.</li>
+          <li>Created a validation set of <strong>200 labeled posts</strong> with refined annotation guidelines.</li>
+          <li>Sentiment: VADER, BERT, RoBERTa, Logistic Regression + GPT comparisons.</li>
+          <li>Topics: LDA, CorEx, BERTopic.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Key Findings</h4>
+        <ul>
+          <li>Strong concern around <strong>plagiarism</strong> and <strong>cheating</strong>.</li>
+          <li>Fear of reduced critical thinking due to over-reliance on AI tools.</li>
+          <li>Educators reported difficulty assessing authentic learning.</li>
+          <li>Topics surfaced ethics, unequal access, and policy uncertainty.</li>
+        </ul>
+        <h4>Model Insights</h4>
+        <ul>
+          <li>Outputs varied significantly by model — manual labels skewed more negative than GPT.</li>
+          <li>GPT-3.5 / GPT-4 with reasoning handled nuanced cases more consistently.</li>
+        </ul>
+        <h4>Links</h4>
+        <div class="modal-links">
+          <a href="https://github.com/ns5504/Assessing-the-Impact-of-ChatGPT" target="_blank" rel="noopener">GitHub Repo ↗</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- MODAL 6: Retention Dashboard (NEW) -->
-  <section class="modal" id="modal-retention" role="dialog" aria-modal="true" aria-labelledby="modal-retention-title" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close">×</button>
-
-      <h3 id="modal-retention-title">Customer Behavior & Retention Dashboard</h3>
-      <p class="small">Analytics • Cohorts • KPI Tracking • Dashboarding • Retention Strategy</p>
-      <p> Comming Soon </p>
-
-      <!--<div class="modal-grid">
-        <div>
-          <h4>Goal</h4>
-          <p>
-            Track repeat purchase behavior and engagement over time to support retention strategy and
-            lifecycle marketing decisions.
-          </p>
-
-          <h4>What I built</h4>
-          <ul>
-            <li>Cohort-based view of repeat purchase rate over time.</li>
-            <li>Segments by acquisition channel and customer type.</li>
-            <li>Summary KPIs and “what to do next” insights for stakeholders.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Key insights</h4>
-          <ul>
-            <li>Identified segments with drop-off points for targeted reactivation.</li>
-            <li>Highlighted channels with higher repeat behavior.</li>
-            <li>Made retention opportunities visible through trends and cohorts.</li>
-          </ul>
-
-          <h4>Links</h4>
-          <p class="modal-links">
-            <a href="https://github.com/ns5504" target="_blank" rel="noopener">GitHub Repo</a>
-            <a href="#contact">Contact me</a>-->
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<script>
+  function smoothTo(id) {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  }
+  function openModal(id) {
+    document.querySelectorAll('.modal').forEach(m => {
+      m.classList.remove('is-open');
+      m.setAttribute('aria-hidden', 'true');
+    });
+    var modal = document.getElementById(id);
+    if (!modal) return;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.getElementById('modalBackdrop').classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.querySelectorAll('.modal').forEach(m => {
+      m.classList.remove('is-open');
+      m.setAttribute('aria-hidden', 'true');
+    });
+    document.getElementById('modalBackdrop').classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('modalBackdrop').addEventListener('click', closeModal);
+  document.querySelectorAll('.modal').forEach(function(modal) {
+    modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+  });
+  window.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+  document.querySelectorAll('.project-card[data-modal]').forEach(function(card) {
+    card.addEventListener('click', function() { openModal(card.getAttribute('data-modal')); });
+    card.addEventListener('keydown', function(e) { if (e.key === 'Enter') openModal(card.getAttribute('data-modal')); });
+  });
+</script>
+</body>
+</html>
 
   <script src="assets/js/modal.js"></script>
   <script src="assets/js/ripple.js"></script>
